@@ -1,5 +1,5 @@
 public interface MusicPlayer {
-  void play();
-  void pause();
-  void stop();
+  void playMusic();
+  void pauseMusic();
+  void stopMusic();
 }

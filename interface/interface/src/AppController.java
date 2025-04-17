@@ -1,24 +1,16 @@
 public class AppController {
   public static void main(String[] args) {
-    var musicPlayer = new MusicPlayer(){
-      @Override
-      public void play() {
-        System.out.println("Playing music");
-      }
+    var nokia = new Smartphone();
+    nokia.playMusic();
+    nokia.pauseMusic();
+    nokia.stopMusic();
+    nokia.playVideo();
+    nokia.pauseVideo();
+    nokia.stopVideo();
 
-      @Override
-      public void pause() {
-        System.out.println("Pausing music");
-      }
-
-      @Override
-      public void stop() {
-        System.out.println("Stopping music");
-      }
-    };
-
-    musicPlayer.play();
-    musicPlayer.pause();
-    musicPlayer.stop();
+    var mp3 = new Jukebox();
+    mp3.playMusic();
+    mp3.pauseMusic();
+    mp3.stopMusic();
   }
 }

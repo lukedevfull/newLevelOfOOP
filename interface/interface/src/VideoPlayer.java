@@ -1,5 +1,5 @@
 public interface VideoPlayer {
-  void play();
-  void pause();
-  void stop();
+  void playVideo();
+  void pauseVideo();
+  void stopVideo();
 }
